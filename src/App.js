@@ -8,6 +8,7 @@ import './App.css';
 import FirstProblem from './components/FirstProblem';
 import SecondProblem from './components/SecondProblem';
 import ThirdProblem from './components/ThirdProblem';
+import Home from './components/Home';
 
 function App() {
 
@@ -20,18 +21,12 @@ function App() {
           <Route path="/problem-1" component={FirstProblem} />
           <Route path="/problem-2" component={SecondProblem} />
           <Route path="/problem-3" component={ThirdProblem} />
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/" component={Home} />
         </Switch>
 
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
 }
 
 export default App;
