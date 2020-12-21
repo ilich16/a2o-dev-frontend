@@ -201,7 +201,7 @@ function SecondProblem() {
         <div style={{ textAlign: 'center' }}>
           <Grid container spacing={6} justify="center" alignItems="center">
             <Grid item xs={12} sm={5}>
-              <TextField id="input-2" multiline fullWidth rows={20} label="Input" value={input} onChange={handleInputChange} variant="outlined" />
+              <TextField id="input-2" multiline fullWidth rows={10} label="Input" value={input} onChange={handleInputChange} variant="outlined" />
             </Grid>
             <Grid item xs={12} sm={2} >
               <Button variant="contained" color="primary" onClick={computeUserInput}>
@@ -209,7 +209,7 @@ function SecondProblem() {
               </Button>
             </Grid>
             <Grid item xs={12} sm={5}>
-              <TextField id="output-2" multiline fullWidth rows={20} label="Output" value={output} InputProps={{ readOnly: true, }} variant="outlined" />
+              <TextField id="output-2" multiline fullWidth rows={10} label="Output" value={output} InputProps={{ readOnly: true, }} variant="outlined" />
             </Grid>
           </Grid>
         </div>
