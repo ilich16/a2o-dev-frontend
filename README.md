@@ -1,6 +1,6 @@
 # A2O Frontend
 
-Project made in React that contains the frontend server for the Django API.
+Project made with React that contains the frontend server for the Django API.
 
 ## Setup
 
