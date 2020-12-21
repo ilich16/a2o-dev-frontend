@@ -180,15 +180,15 @@ function FirstProblem() {
           </ListItemLink>
           <ListItemLink href='/problem-1' selected>
             <ListItemIcon> <SportsTennisIcon /></ListItemIcon>
-            <ListItemText primary="First problem" />
+            <ListItemText primary="Padel League" />
           </ListItemLink>
           <ListItemLink href='/problem-2'>
             <ListItemIcon> <SvgIcon><path d={mdiChessQueen} /></SvgIcon></ListItemIcon>
-            <ListItemText primary="Second problem" />
+            <ListItemText primary="Chess" />
           </ListItemLink>
           <ListItemLink href='/problem-3'>
             <ListItemIcon> <SvgIcon><path d={mdiAlphabetical} /></SvgIcon></ListItemIcon>
-            <ListItemText primary="Third problem" />
+            <ListItemText primary="String Value" />
           </ListItemLink>
         </List>
       </Drawer>
