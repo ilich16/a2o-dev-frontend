@@ -7,6 +7,7 @@ import {
 import './App.css';
 import FirstProblem from './components/FirstProblem';
 import SecondProblem from './components/SecondProblem';
+import ThirdProblem from './components/ThirdProblem';
 
 function App() {
 
@@ -18,9 +19,7 @@ function App() {
         <Switch>
           <Route path="/problem-1" component={FirstProblem} />
           <Route path="/problem-2" component={SecondProblem} />
-          <Route path="/problem-3">
-            <Problem3 />
-          </Route>
+          <Route path="/problem-3" component={ThirdProblem} />
           <Route path="/">
             <Home />
           </Route>
@@ -33,10 +32,6 @@ function App() {
 
 function Home() {
   return <h2>Home</h2>;
-}
-
-function Problem3() {
-  return <h2>Problem 3</h2>;
 }
 
 export default App;
