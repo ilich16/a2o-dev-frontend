@@ -26,8 +26,10 @@ import Grid from '@material-ui/core/Grid';
 
 const drawerWidth = 240;
 
+// The URL of the API
 const API_URL = 'http://127.0.0.1:8000/api/v1/';
 
+// Style for the navigation drawer
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -89,10 +91,12 @@ function ListItemLink(props) {
   return <ListItem button component="a" {...props} />;
 }
 
+// Format user input to send to the API
 function formatUserInput(input) {
   return input.replace(/(\r\n|\n|\r)/gm, '%0A');
 }
 
+// Component for the fist problem using hooks
 function FirstProblem() {
   const classes = useStyles();
   const theme = useTheme();
@@ -100,18 +104,22 @@ function FirstProblem() {
   const [input, setInput] = React.useState('');
   const [output, setOutput] = React.useState('');
 
+  // Function to open the navigation drawer 
   const handleDrawerOpen = () => {
     setOpen(true);
   }
 
+  // Function to close the navigation drawer 
   const handleDrawerClose = () => {
     setOpen(false);
   }
 
+  // Function to handle the input value
   const handleInputChange = (event) => {
     setInput(event.target.value);
   }
 
+  // Function to send a request to the API
   const computeUserInput = () => {
     let inputFormatted = formatUserInput(input);
     let URL = API_URL + 'problem-1/?input=' + inputFormatted
@@ -193,7 +201,7 @@ function FirstProblem() {
         <div style={{ textAlign: 'center' }}>
           <Grid container spacing={6} justify="center" alignItems="center">
             <Grid item xs={12} sm={5}>
-              <TextField id="standard-basic" multiline fullWidth rows={20} label="Input" value={input} onChange={handleInputChange} variant="outlined" />
+              <TextField id="input-1" multiline fullWidth rows={20} label="Input" value={input} onChange={handleInputChange} variant="outlined" />
             </Grid>
             <Grid item xs={12} sm={2} >
               <Button variant="contained" color="primary" onClick={computeUserInput}>
@@ -201,7 +209,7 @@ function FirstProblem() {
               </Button>
             </Grid>
             <Grid item xs={12} sm={5}>
-              <TextField id="standard-basic" multiline fullWidth rows={20} label="Output" value={output} InputProps={{ readOnly: true, }} variant="outlined" />
+              <TextField id="output-1" multiline fullWidth rows={20} label="Output" value={output} InputProps={{ readOnly: true, }} variant="outlined" />
             </Grid>
           </Grid>
         </div>
