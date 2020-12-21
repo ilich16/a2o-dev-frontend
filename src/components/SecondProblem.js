@@ -178,11 +178,11 @@ function SecondProblem() {
             <ListItemIcon> <HomeIcon /></ListItemIcon>
             <ListItemText primary="Home" />
           </ListItemLink>
-          <ListItemLink href='/problem-1' selected>
+          <ListItemLink href='/problem-1'>
             <ListItemIcon> <SportsTennisIcon /></ListItemIcon>
             <ListItemText primary="Padel League" />
           </ListItemLink>
-          <ListItemLink href='/problem-2'>
+          <ListItemLink href='/problem-2' selected>
             <ListItemIcon> <SvgIcon><path d={mdiChessQueen} /></SvgIcon></ListItemIcon>
             <ListItemText primary="Chess" />
           </ListItemLink>
