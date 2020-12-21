@@ -126,11 +126,7 @@ function SecondProblem() {
     fetch(URL)
       .then(response => response.json())
       .then(data => {
-        let result = ''
-        data.result.forEach(element => {
-          result += element + '\n'
-        });
-        setOutput(result)
+        setOutput(data.result)
       });
   }
 
