@@ -154,7 +154,7 @@ function ThirdProblem() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Chess
+            String Value
           </Typography>
         </Toolbar>
       </AppBar>
